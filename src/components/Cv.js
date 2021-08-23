@@ -22,7 +22,10 @@ const Cv = (props) => {
                 <div className="all-page-container">
                     <Document
                         file={itCV}
-                        options={{ workerSrc: "../pdf.worker.js" }}
+                        options={{
+                            cMapUrl: `//cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/cmaps/`,
+                            cMapPacked: true,
+                          }}
                         onLoadSuccess={onDocumentLoadSuccess}
                         onLoadError={console.error}
                     >
