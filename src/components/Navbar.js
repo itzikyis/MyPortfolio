@@ -28,27 +28,27 @@ const menuItems = [
     {
         listIcon: <Home />,
         listText: "Home",
-        listPath: "/"
+        listPath: "/MyPortfolio/"
     },
     {
         listIcon: <AssignmentInd />,
         listText: "Resume",
-        listPath: "/resume"
+        listPath: "/MyPortfolio/resume"
     },
     {
         listIcon: <AssignmentInd />,
         listText: "CV",
-        listPath: "/cv"
+        listPath: "/MyPortfolio/cv"
     },
     {
         listIcon: <Apps />,
         listText: "Portfolio",
-        listPath: "/portfolio"
+        listPath: "/MyPortfolio/portfolio"
     },
     {
         listIcon: <ContactMail />,
         listText: "Contacts",
-        listPath: "/contacts"
+        listPath: "/MyPortfolio/contacts"
     }
 ];
 

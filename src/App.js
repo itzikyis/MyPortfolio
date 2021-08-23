@@ -12,11 +12,11 @@ function App() {
   return (
     <div>
       <CssBaseline />
-      <Route exact  path="/" component={Home} />
-      <Route path="/resume" component={Resume} />
-      <Route path="/cv" component={Cv} />
-      <Route path="/portfolio" component={Portfolio} />
-      <Route path="/contacts" component={Contacts} />
+      <Route exact  path="/MyPortfolio/" component={Home} />
+      <Route path="/MyPortfolio/resume" component={Resume} />
+      <Route path="/MyPortfolio/cv" component={Cv} />
+      <Route path="/MyPortfolio/portfolio" component={Portfolio} />
+      <Route path="/MyPortfolio/contacts" component={Contacts} />
     </div>
   );
 }
