@@ -2,7 +2,7 @@
     "name": "portfolio",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://itzikyis.github.io/MyPortfolio",
+    "homepage": "https://itzikyis.github.io",
     "dependencies": {
         "@babel/core": "^7.15.0",
         "@material-ui/core": "^4.10.2",
