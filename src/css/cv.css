@@ -17,7 +17,7 @@
 }
 
 .react-pdf__Page__annotations.annotationLayer {
-    padding: 20px;
+    padding: 0px;
 }
 
 .react-pdf__Page__canvas {
@@ -29,6 +29,6 @@
 
 .all-page-container {
     height: 100%;
-    max-height: 500px;
+    max-height: 800px;
     overflow: auto;
 }
