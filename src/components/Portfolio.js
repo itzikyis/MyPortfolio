@@ -2,9 +2,10 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid, Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography, Box } from '@material-ui/core'
 import NavBar from './Navbar'
-import project1 from "../images/html-css-javascript-lg.jpg"
-import project2 from "../images/javascript-fullstack.jpg"
-import project3 from "../images/react-redux.jpg"
+import project1 from "../images/netflix-logo.jpg"
+//html-css-javascript-lg.jpg"
+import project2 from "../images/react-redux.jpg"
+import project3 from "../images/react.jpg"
 import project4 from "../images/mern-stack.jpg"
 
 const useStyle = makeStyles({
@@ -18,8 +19,39 @@ const useStyle = makeStyles({
     }
 })
 
+
+
 const Portfolio = () => {
     const classes = useStyle();
+
+    const handleNetfixClick = () => {
+        window.open('https://itzikyis.github.io/Netflix/', '_blank');
+    };
+
+    const handleUsersManegmentClick = () => {
+        window.open('https://itzikyis.github.io/UsersManegment/', '_blank');
+    };
+
+    const netfixCodeClick = () => {
+        window.open('https://github.com/itzikyis/Netflix/', '_blank');
+    };
+
+    const usersManegmentCodeClick = () => {
+        window.open('https://github.com/itzikyis/UsersManegment/', '_blank');
+    };
+
+    
+    const moviesManegmentCodeClick = () => {
+        window.open('https://github.com/itzikyis/MoviesManegment/', '_blank');
+    };
+
+    const handleMoviesManegmentClick = () => {
+        window.open('https://itzikyis.github.io/MoviesManegment/', '_blank');
+    };
+
+
+    
+
     return (
         <Box component="div" className={classes.mainContainer}>
             <NavBar />
@@ -36,18 +68,18 @@ const Portfolio = () => {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5">
-                                    Project 1
+                                    Netflix
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iure animi modi odio commodi ipsa totam et quisquam mollitia error. Est aspernatur eaque placeat asperiores saepe sequi magnam, molestiae quisquam.
+                                    React, HTML, CSS, styled-components, react-icons-kit
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="small" color="primary">
-                                Share
+                            <Button size="small" color="primary" onClick={() => netfixCodeClick()}>
+                                Code
                             </Button>
-                            <Button size="small" color="primary">
+                            <Button size="small" color="primary" onClick={() => handleNetfixClick()}>
                                 Live Demo
                             </Button>
                         </CardActions>
@@ -55,7 +87,7 @@ const Portfolio = () => {
                 </Grid>
                 {/*Project 2*/}
                 <Grid item xs={12} sm={8} md={6}>
-                    <Card className={classes.cardContainer}>
+                    <Card className={classes.cardContainer} >
                         <CardActionArea>
                             <CardMedia
                                 component="img"
@@ -65,20 +97,20 @@ const Portfolio = () => {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5">
-                                    Project 2
-                                            </Typography>
+                                    Users Manegment
+                                </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iure animi modi odio commodi ipsa totam et quisquam mollitia error. Est aspernatur eaque placeat asperiores saepe sequi magnam, molestiae quisquam.
-                                            </Typography>
+                                    React, HTML, CSS, react-bootstrap, react-redux, axios
+                                </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="small" color="primary">
-                                Share
-                                        </Button>
-                            <Button size="small" color="primary">
+                            <Button size="small" color="primary" onClick={() => usersManegmentCodeClick()}>
+                                Code
+                            </Button>
+                            <Button size="small" color="primary" onClick={() => handleUsersManegmentClick()}>
                                 Live Demo
-                                        </Button>
+                            </Button>
                         </CardActions>
                     </Card>
                 </Grid>
@@ -94,20 +126,20 @@ const Portfolio = () => {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5">
-                                    Project 3
-                                                        </Typography>
+                                    Movies Manegment
+                                </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iure animi modi odio commodi ipsa totam et quisquam mollitia error. Est aspernatur eaque placeat asperiores saepe sequi magnam, molestiae quisquam.
-                                                        </Typography>
+                                    React, HTML, CSS, material-ui, react-router-dom, firebase- Authentication, Firestore DB
+                                </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="small" color="primary">
-                                Share
-                                                    </Button>
-                            <Button size="small" color="primary">
+                            <Button size="small" color="primary" onClick={() => moviesManegmentCodeClick()}>
+                                Code
+                            </Button>
+                            <Button size="small" color="primary" onClick={() => handleMoviesManegmentClick()}>
                                 Live Demo
-                                                    </Button>
+                            </Button>
                         </CardActions>
                     </Card>
                 </Grid>
@@ -123,20 +155,20 @@ const Portfolio = () => {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5">
-                                    Project 4
-                                                                    </Typography>
+                                    COMING SOON!
+                                </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iure animi modi odio commodi ipsa totam et quisquam mollitia error. Est aspernatur eaque placeat asperiores saepe sequi magnam, molestiae quisquam.
-                                                                    </Typography>
+                                    Coming soon
+                                </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" color="primary">
-                                Share
-                                                                </Button>
+                                Code
+                            </Button>
                             <Button size="small" color="primary">
                                 Live Demo
-                                                                </Button>
+                            </Button>
                         </CardActions>
                     </Card>
                 </Grid>
