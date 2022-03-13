@@ -158,7 +158,7 @@ const Portfolio = () => {
                                     COMING SOON!
                                 </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Coming soon
+                                    Coming soon...
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
